@@ -10,7 +10,7 @@
 
 */
 //Step 5
-var thisTime = new Date (2018, 1, 3, 3, 15, 28, 0);
+var thisTime = new Date ();
 // step 6
 var timeStr = thisTime.toLocaleString();
 // step 7
