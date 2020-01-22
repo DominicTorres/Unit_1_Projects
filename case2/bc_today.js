@@ -13,8 +13,18 @@
    student union.
 
 */
-
-
+//step5
+var thisDate = new Date();
+//step 6
+var dateString = thisDate.toLocaleDateString();
+//step 7
+var dateHTML = "<h2>" + dateString + "</h2>";
+//step 8
+var thisDay = thisDate.getDay();
+//step 9
+var eventHTML = getEvent(thisDay);
+//step 10
+document.getElementById("unionToday").insertAdjacentHTML("beforeend", dateHTML + eventHTML);
 
 function getEvent(day) {
    var eventHTML;
