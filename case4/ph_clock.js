@@ -1,22 +1,39 @@
+" use strict "
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 9
    Case Problem 4
 
    Countdown Clock for Ticket Ordering
-   Author: 
-   Date:  
+   Author: Dominic Torres
+   Date: 1/22/20 
 
    Filename:   ph_clock.js     
 
 */
-
-
-
-
+//step 5
+var minsLeft = "";
+//step 6
+var secsLeft = 15;
+//step 7
+var timeLeft = (minsLeft*60) + secsLeft;
+//step 8
+function countdown() {
+   var minsLeft = Math.floor(timeLeft / 60);
+   var secsLeft = timeLeft - 60 * minsLeft;
+   var minsString = addLeadingZero(minsLeft);
+   var minsString = addLeadingZero(secsLeft);
+   document.getElementById("minutes").innerHTML = minsString;
+   document.getElementById("seconds").innerHTML = secsString;
+   checkTimer();
+   timeLeft--;
+}
 
 
 /* ------------------------------------------------- */
+function stopClock() {
+   document.getElementById("TimeHead")
+}
 
 
 /* The checkTimer() function tests whether there is any time left to make the
